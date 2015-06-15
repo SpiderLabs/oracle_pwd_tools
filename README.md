@@ -1,4 +1,3 @@
-# oracle_pwd_tools
 #Oracle Database Password Tools
 Oracle Database 12c password cracking script (Python) which uses data from a successful authentication network capture.
 Variables under "# Server authentication" and "# Client authentication" should be set to data from your capture.
