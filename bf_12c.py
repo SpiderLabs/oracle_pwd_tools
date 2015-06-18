@@ -43,7 +43,7 @@ def TryPassword(password):
     hash = hashlib.sha512()
     hash.update(key_64bytes)
     hash.update(bin_salt)
-    T = hash.digest()
+    T = hash.digest()    
 
     obj = AES.new(T[0:32], AES.MODE_CBC, '\x00'*16)
     client_generated_random_salt = obj.decrypt(bin_client_session_key)
